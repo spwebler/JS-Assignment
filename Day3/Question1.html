@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function odd_even(){
+var no;
+no=Number(document.getElementById("no_input").value);
+if(no%2==0)
+{
+console.log(`The number entered is  ${no}  and number is even`);
+}
+else
+{
+console.log(`The number entered is ${no} and number is odd`);
+}
+}
+</script>
+</head>
+<body>
+Input:<input id="no_input"><br />
+<button onclick="odd_even()">Click me</button>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function marks(){
+var no;
+no=Number(document.getElementById("no_input").value);
+if(no<=30)
+{
+console.log(`Marks is ${no}  and grade is fail`);
+}
+else if(31<= no && no<=50)
+{
+console.log(`Marks is ${no} and grade is B`);
+}
+else
+{
+console.log(`Marks is ${no} and grade is A`);
+}
+}
+
+
+function marks1(){
+var no1;
+no1=Number(document.getElementById("no_input1").value);
+switch(true) {
+
+case no1 <= 30:
+alert(`Marks is ${no1}  and grade is fail`);
+break;
+
+case no1 >= 30:
+alert(`Marks is ${no1} and grade is B`);
+break;
+
+default:
+alert(`enter value`);
+break;
+}
+}
+
+</script>
+</head>
+<body>
+Input:<input id="no_input"><br />
+<button onclick="marks()">Click me</button>
+</br>
+Input2:<input id="no_input1"><br />
+<button onclick="marks1()">Click me</button>
+</body>
+</html>
