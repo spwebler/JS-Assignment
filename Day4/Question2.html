@@ -1,0 +1,19 @@
+<html>
+<script>
+const student = {
+   name:"Helinski",
+    age:24,
+    projects: {
+       dicegame:"two player dice game"
+     },
+ }
+
+ console.log(student.name);
+ console.log(student.projects.dicegame);
+ console.log(student.age);
+
+
+ const {name , age , projects:{dicegame}} = student;
+ console.log(name, age,dicegame)
+</script>
+</html>

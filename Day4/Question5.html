@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function marks(){
+var no;
+no=Number(document.getElementById("no_input").value);
+if(no<=5000)
+{
+console.log(`Commission 2%`);
+}
+else if(5001<= no && no<=10000)
+{
+console.log(`Commission 5%`);
+}
+else if(10001<= no && no<=20000)
+{
+console.log(`Commission 7%`);
+}
+else
+{
+console.log(`Commission 10%`);
+}
+}
+
+</script>
+</head>
+<body>
+
+Enter your sale:<input id="no_input"><br />
+<button onclick="marks()">Click me</button>
+</br>
+</body>
+</html>
