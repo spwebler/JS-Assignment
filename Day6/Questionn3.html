@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question3</title>
+    
+</head>
+<style type="text/css">
+    
+    body {
+    background-color: white;
+    color: black;
+}
+  
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+</style>
+<body>
+
+        <h1 id = "name">Welcome..</h1>
+        <h2 id = "dtime"></h2>
+
+    <script>
+        let name = prompt("Plaese Enter Your Name", "abc");
+
+let h1_id = document.querySelector("#name");
+
+h1_id.innerHTML = "Welcome " + name;
+
+let h2_id = document.getElementById("dtime");
+
+
+
+function checkTime(i) 
+{
+    if (i < 10) 
+    {
+      i = "0" + i;
+    }
+    return i;
+}
+  
+function startTime() 
+{
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('dtime').innerHTML = h + ":" + m + ":" + s;
+    t = setTimeout(function() {
+      startTime()
+    }, 500);
+}
+startTime();
+
+
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+
+    </script>
+
+    <button onclick="myFunction()">Dark mode</button>
+
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q.1</title>
+</head>
+<body>
+<script type="text/javascript">
+	let b_color = ["red", "pink", "white", "orange", "#f5d442", "black"];
+
+// console.log(Math.floor(Math.random() * b_color.length));
+
+let setColor = () => {
+    let index = Math.floor(Math.random() * b_color.length);
+
+    document.body.style.backgroundColor = b_color[index];
+}
+
+setInterval(setColor, 5000); 
+
+
+</script>
+</body>
+</html>
