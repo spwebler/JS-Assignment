@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q.8</title>
+</head>
+<body>
+	 <center>
+        <h1>
+            Arrow Function
+        </h1>
+    </center>
+
+    <script>
+    	let ask = (question, yes, no) => {
+    if(confirm(question))
+    {
+        yes();
+    }
+    else
+    {
+        no();
+    }
+}
+
+ask(
+    "Do you agree?",
+
+    () => {
+        alert("You agreed.");
+    },
+
+    () => {
+        alert("You cancelled the execution.");
+    }
+);
+    </script>
+
+    <center>
+       Arrow function
+    </center>
+
+</body>
+</html>

@@ -2,33 +2,36 @@
 <html>
 <head>
 <script>
-function marks(){
-var no;
-no=Number(document.getElementById("no_input").value);
-if(no<=5000)
+
+let sales = parseInt(prompt("Please enter thesales "))
+
+console.log(`Sales made by you : ${sales}`);
+
+if(sales >= 0 && sales <= 5000)
 {
-console.log(`Commission 2%`);
+    console.log(`Commision earned by you is ${sales * 0.02}`);
 }
-else if(5001<= no && no<=10000)
+else if(sales >= 5001 && sales <= 10000)
 {
-console.log(`Commission 5%`);
+    console.log(`Commision earned by you is ${sales * (0.05 + 0.02)}`);
 }
-else if(10001<= no && no<=20000)
+else if(sales >= 10001 && sales <= 20000)
 {
-console.log(`Commission 7%`);
+    console.log(`Commision earned by you is ${sales * (0.07 + 0.05 + 0.02)}`);
+}
+else if(sales > 20000)
+{
+    console.log(`Commision earned by you is ${sales * (0.1 + 0.07 + 0.05 + 0.02)}`);
 }
 else
 {
-console.log(`Commission 10%`);
+    console.log("enter again");
 }
-}
-
 </script>
 </head>
 <body>
 
-Enter your sale:<input id="no_input"><br />
-<button onclick="marks()">Click me</button>
+
 </br>
 </body>
 </html>
